@@ -64,6 +64,14 @@ section {
     background: #efc94d;
 }
 
+.small-5 {
+    margin-top: 10%;
+}
+
+.small-10 {
+    margin-top: 2%;
+}
+
 #screen3 {
     background: #e1793d;
 }
