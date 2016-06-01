@@ -53,7 +53,7 @@ section {
 /* Screens Settings */
 
 #screen1 {
-    background: #43b29d;
+    background: url("http://hd.freewallpaper-s.net/wp-content/uploads/travel/Coffee-shop-latvia-travel-top-2560x1440.jpg");
 }
 
 #screen1 p {
@@ -62,6 +62,14 @@ section {
 
 #screen2 {
     background: #efc94d;
+}
+
+.small-5 {
+    margin-top: 10%;
+}
+
+.small-10 {
+    margin-top: 2%;
 }
 
 #screen3 {
