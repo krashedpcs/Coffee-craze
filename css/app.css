@@ -1,3 +1,12 @@
+/*
+Tutorial Name: Scroll To Top Then Fixed Navigation Effect With JQuery and CSS
+https://stanhub.com/scroll-to-top-then-fixed-navigation-effect-with-jquery-and-css-free-download/
+Description: Create a sticky navigation bar that remains fixed to the top after scroll
+Author: Stan Kostadinov
+Author URI: https://stanhub.com
+Version: 1.0.0 - 11.01.2014
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +38,7 @@ body {
 
 nav {
     position: absolute;
-    bottom: 0;
+    bottom: 32px;
     width: 100%;
     height: 70px;
     background: #fff;
@@ -46,14 +55,14 @@ nav li a {
 }
 
 section {
-    height: 100vh;
+    height: 95vh;
 }
 
 
 /* Screens Settings */
 
 #screen1 {
-    background: url("http://hd.freewallpaper-s.net/wp-content/uploads/travel/Coffee-shop-latvia-travel-top-2560x1440.jpg");
+    background: #43b29d;
 }
 
 #screen1 p {
@@ -62,14 +71,6 @@ section {
 
 #screen2 {
     background: #efc94d;
-}
-
-.small-5 {
-    margin-top: 10%;
-}
-
-.small-10 {
-    margin-top: 2%;
 }
 
 #screen3 {
