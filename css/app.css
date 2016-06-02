@@ -118,25 +118,39 @@ section {
 }
 
 .container {
+    padding-top: 4%;
     width: 100%;
     height: 70px;
 }
 
-.row ul {
+.media ul {
     margin: 0 auto;
     width: 5%;
     list-style-type: none;
     display: -webkit-box;
     padding: 2px;
+    margin-left: 37%;
 }
 
-.row li {
+.media li {
     padding: 5%;
 }
 
 #screen3 {
+    height: 80vh;
     background: #e1793d;
 }
+
+h3 {
+    padding-top: 8%;
+    font-size: 1.5em;
+}
+
+/*
+p {
+    padding-top: 3%;
+}
+*/
 
 @media only screen and (max-width: 520px) {
     nav li {
