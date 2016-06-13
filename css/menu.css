@@ -1,74 +1,13 @@
-.navigation{
-    position: fixed;
-    z-index: 100%;
-    top: -20px;
-    
+.row{
+    margin-top: 10%;
+
 }
-.nav{
-    list-style-type: none;
-    position: fixed;
-    padding-top: 9px;
-    
-    
-}
-.nav li{
-    display: inline-block;
-    border: 0px solid black;
-    padding: 5px;
-    margin: auto;
-    text-align: center;
-    color: ghostwhite;
-    font-size: 26px
-    
-}
-.bitings{
-    width: 1250px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-size: 20px;
-}
-.bakery{
-    width: 1240px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-size: 20px;
+.columns{
+    font-size: x-large;
+    padding-top: 5%;
 }
 
-.bakery h1{
-    color: ghostwhite;
-}
-h1,h2,h3{
-    text-align: center;
-}
 h1{
-    font-size: 28px
-}
-
-body{
-    font-family: IndieFlower;
-    background-color: darkgray;
-}
-.morning{
-    background-color: dimgrey;
-    color: whitesmoke;
-    padding: 25px;
-    font-size: 20px;
-    font-family: IndieFlower;
-}
-.dishes{
-     background-color: dimgrey;
-    color: whitesmoke;
-    padding: 25px;
-    font-size: 20px;
-    font-family: IndieFlower;
-}
-
-footer{
-    background-color: black;
-    color: whitesmoke;
     text-align: center;
-}
-#option{
-    text-align: center;
-    color: whitesmoke;
+    margin-left: 20%;
 }
