@@ -146,7 +146,9 @@ h3 {
     font-size: 1.5em;
 }
 
-
+form{
+    margin-bottom: 5%;
+}
 /*
 p {
     padding-top: 3%;
