@@ -23,7 +23,8 @@ section{
 
 }
 footer{
-    padding-top: 5%;
-    /*height: 15vh;*/
+    background-color: #3c3c3c;
+    padding-top: 7.5vh;
+    height: 15vh;
     text-align: center;
 }
