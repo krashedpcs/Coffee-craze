@@ -1,13 +1,24 @@
+section{
+    height: 65vh;
+}
+
+#coffee{
+    background-color: rgba(243, 167, 96, 0.64);
+}
+
+#drinks{
+    background-color: rgba(87, 59, 48, 1);
+}
+
+#bakery{
+    background-color: rgba(191, 113, 34, 1);
+}
 .row{
-    margin-top: 10%;
-
-}
-.columns{
-    font-size: x-large;
     padding-top: 5%;
+    text-align: center;
 }
 
-h1{
-    text-align: center;
-    margin-left: 20%;
+.coffee, .smoothies, .cake, .pasty{
+    border-right-style: double;
+
 }
