@@ -45,12 +45,11 @@ nav li a {
     text-transform: uppercase;
 }
 
-
-.toggle-nav{
+.toggle-nav {
     display: none;
 }
 
-.nav-mobile style{
+.nav-mobile style {
     display: block;
 }
 
@@ -65,13 +64,15 @@ section {
 /* Screens Settings */
 
 #screen1 {
-    background: #43b29d;
+    background: url("../img/coffee.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .skewed {
     display: inline-block;
     font: 2em/1 impact, sans-serif;
-    margin-top: 5em;
+    margin-top: 2.5em;
     position: relative;
     -webkit-transform: rotate(-10deg) skew(-10deg, 0);
     -moz-transform: rotate(-10deg) skew(-10deg, 0);
@@ -158,9 +159,11 @@ h3 {
     font-size: 1.5em;
 }
 
-form{
+form {
     margin-bottom: 5%;
 }
+
+
 /*
 p {
     padding-top: 3%;
@@ -183,11 +186,11 @@ p {
     .skewed {
         margin-top: 1.2em;
         position: relative;
-        -webkit-transform: rotate(-10deg) skew(-10deg );
-        -moz-transform: rotate(-10deg) skew(-10deg );
-        -ms-transform: rotate(-10deg) skew(-10deg );
-        -o-transform: rotate(-10deg) skew(-10deg );
-        transform: rotate(-5deg) skew(-11deg );
+        -webkit-transform: rotate(-10deg) skew(-10deg);
+        -moz-transform: rotate(-10deg) skew(-10deg);
+        -ms-transform: rotate(-10deg) skew(-10deg);
+        -o-transform: rotate(-10deg) skew(-10deg);
+        transform: rotate(-5deg) skew(-11deg);
     }
     .skewed span {
         padding: 0.5em;
@@ -243,45 +246,42 @@ p {
     }
 }
 
-
-@media only screen and (max-width: 640px){
-    .toggle-nav{
+@media only screen and (max-width: 640px) {
+    .toggle-nav {
         display: block;
         padding: 10px;
         position: absolute;
         right: 10px;
         line-height: 30px;
     }
-    .toggle-nav:after{
+    .toggle-nav:after {
         content: ' Menu';
     }
-
-    .nav-mobile{
+    .nav-mobile {
         display: none;
     }
-
-    .style-mobile{
+    .style-mobile {
         background: #ffffff;
-        top : 51px;
-        position : absolute;
-        width : 100%;
+        top: 51px;
+        position: absolute;
+        width: 100%;
     }
-
-    .style-mobile li{
+    .style-mobile li {
         display: block;
         width: 100%;
     }
-
-    .nav{
+    .nav {
         display: block;
         float: none;
         margin: 0em;
     }
 }
 
-@media only screen and (min-width: 641px){
+@media only screen and (min-width: 641px) {
     .nav-mobile {
-        display:block !important;
+        display: block !important;
     }
 }
+
+
 /*********MEDIA QUERY END**********/
