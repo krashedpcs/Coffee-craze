@@ -28,3 +28,41 @@ footer{
     height: 15vh;
     text-align: center;
 }
+
+@media only screen and (max-width: 768px){
+    .small-2, .small-4, .small-6{
+        width: 100%;
+    }
+    #coffee, #drinks{
+        height: 125vh;
+    }
+    #bakery{
+        height: 185vh;
+    }
+    .coffee, .smoothies, .cake, .pasty{
+        border-right-style: none;
+    }
+    .tea, .other, .pasty, .biscuits{
+        border-top-style: double;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .small-2, .small-4, .small-6{
+        width: 100%;
+    }
+
+    #coffee, #drinks{
+        height: 110vh;
+    }
+    #bakery{
+        height: 165vh;
+    }
+
+    .coffee, .smoothies, .cake, .pasty{
+        border-right-style: none;
+    }
+    .tea, .other, .pasty, .biscuits{
+        border-top-style: double;
+    }
+}
