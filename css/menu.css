@@ -22,3 +22,8 @@ section{
     border-right-style: double;
 
 }
+footer{
+    padding-top: 5%;
+    /*height: 15vh;*/
+    text-align: center;
+}
