@@ -29,6 +29,13 @@ footer{
     text-align: center;
 }
 
+@media only screen and (max-width: 1024px){
+   section {
+       height: 75vh;
+   }
+}
+
+
 @media only screen and (max-width: 768px){
     .small-2, .small-4, .small-6{
         width: 100%;

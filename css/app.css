@@ -45,6 +45,18 @@ nav li a {
     text-transform: uppercase;
 }
 
+
+.toggle-nav{
+    display: none;
+}
+
+.nav-mobile style{
+    display: block;
+}
+
+
+/*END OF NAVIGATION*/
+
 section {
     height: 100vh;
 }
@@ -171,11 +183,11 @@ p {
     .skewed {
         margin-top: 1.2em;
         position: relative;
-        -webkit-transform: rotate(-10deg) skew(-10deg, 0);
-        -moz-transform: rotate(-10deg) skew(-10deg, 0);
-        -ms-transform: rotate(-10deg) skew(-10deg, 0);
-        -o-transform: rotate(-10deg) skew(-10deg, 0);
-        transform: rotate(-5deg) skew(-11deg, 0);
+        -webkit-transform: rotate(-10deg) skew(-10deg );
+        -moz-transform: rotate(-10deg) skew(-10deg );
+        -ms-transform: rotate(-10deg) skew(-10deg );
+        -o-transform: rotate(-10deg) skew(-10deg );
+        transform: rotate(-5deg) skew(-11deg );
     }
     .skewed span {
         padding: 0.5em;
@@ -218,3 +230,58 @@ p {
         box-sizing: content-box;
     }
 }
+
+
+/****************************MEDIA QUERIES************************************/
+
+@media only screen and (max-width: 768px) {
+    .nav li {
+        font-size: 14px;
+        float: left;
+        padding-left: 0%;
+        margin-left: 7%;
+    }
+}
+
+
+@media only screen and (max-width: 640px){
+    .toggle-nav{
+        display: block;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+        line-height: 30px;
+    }
+    .toggle-nav:after{
+        content: ' Menu';
+    }
+
+    .nav-mobile{
+        display: none;
+    }
+
+    .style-mobile{
+        background: #ffffff;
+        top : 51px;
+        position : absolute;
+        width : 100%;
+    }
+
+    .style-mobile li{
+        display: block;
+        width: 100%;
+    }
+
+    .nav{
+        display: block;
+        float: none;
+        margin: 0em;
+    }
+}
+
+@media only screen and (min-width: 641px){
+    .nav-mobile {
+        display:block !important;
+    }
+}
+/*********MEDIA QUERY END**********/
