@@ -29,7 +29,7 @@ body {
 
 nav {
     position: absolute;
-    bottom: 32px;
+    bottom: 0px;
     width: 100%;
     height: 70px;
     background: #fff;
@@ -45,33 +45,52 @@ nav li a {
     text-transform: uppercase;
 }
 
+.toggle-nav {
+    display: none;
+}
+
+.nav-mobile style {
+    display: block;
+}
+
+
+/*END OF NAVIGATION*/
+
 section {
-    height: 95vh;
+    height: 100vh;
 }
 
 
 /* Screens Settings */
 
 #screen1 {
-    background: #43b29d;
+    background: url("../img/coffee.jpeg") no-repeat;
+    background-size: cover;
 }
 
 .skewed {
     display: inline-block;
     font: 2em/1 impact, sans-serif;
-    margin-top: 5em;
+    margin-top: 2.5em;
     position: relative;
-    -webkit-transform: rotate(-10deg) skew(-10deg, 0);
-    -moz-transform: rotate(-10deg) skew(-10deg, 0);
-    -ms-transform: rotate(-10deg) skew(-10deg, 0);
-    -o-transform: rotate(-10deg) skew(-10deg, 0);
-    transform: rotate(-10deg) skew(-10deg, 0);
+    -webkit-transform: rotate(-10deg) skew(-10deg);
+    -moz-transform: rotate(-10deg) skew(-10deg);
+    -ms-transform: rotate(-10deg) skew(-10deg);
+    -o-transform: rotate(-10deg) skew(-10deg);
+    transform: rotate(-10deg) skew(-10deg);
 }
 
 .skewed:after,
 .skewed:before {
     background: #666;
-    box-shadow: inset 0 0 0 .5em #666, inset 0 .7em 0 #666, inset 0 .9em 0 #888, inset 0 1.4em 0 #666, inset 0 1.6em 0 #888, inset 0 2.1em 0 #666, inset 0 2.3em 0 #888, inset 0 2.5em 0 #666;
+    box-shadow: inset 0 0 0 .5em #666,
+    inset 0 .7em 0 #666,
+    inset 0 .9em 0 #888,
+    inset 0 1.4em 0 #666,
+    inset 0 1.6em 0 #888,
+    inset 0 2.1em 0 #666,
+    inset 0 2.3em 0 #888,
+    inset 0 2.5em 0 #666;
     content: '';
     height: 3em;
     position: absolute;
@@ -124,12 +143,11 @@ section {
 }
 
 .media ul {
-    margin: 0 auto;
     width: 5%;
     list-style-type: none;
     display: -webkit-box;
     padding: 2px;
-    margin-left: 37%;
+    margin: 0 auto 0 37%;
 }
 
 .media li {
@@ -146,12 +164,12 @@ h3 {
     font-size: 1.5em;
 }
 
-
-/*
-p {
-    padding-top: 3%;
+form {
+    margin-bottom: 5%;
 }
-*/
+
+
+
 
 @media only screen and (max-width: 520px) {
     section {
@@ -167,13 +185,13 @@ p {
         font-size: 14px;
     }
     .skewed {
-        margin-top: 1.2em;
+        margin-top: 3.2em;
         position: relative;
-        -webkit-transform: rotate(-10deg) skew(-10deg, 0);
-        -moz-transform: rotate(-10deg) skew(-10deg, 0);
-        -ms-transform: rotate(-10deg) skew(-10deg, 0);
-        -o-transform: rotate(-10deg) skew(-10deg, 0);
-        transform: rotate(-5deg) skew(-11deg, 0);
+        -webkit-transform: rotate(-10deg) skew(-10deg);
+        -moz-transform: rotate(-10deg) skew(-10deg);
+        -ms-transform: rotate(-10deg) skew(-10deg);
+        -o-transform: rotate(-10deg) skew(-10deg);
+        transform: rotate(-5deg) skew(-11deg);
     }
     .skewed span {
         padding: 0.5em;
@@ -181,7 +199,14 @@ p {
     .skewed:after,
     .skewed:before {
         background: #666;
-        box-shadow: inset 0 0 0 .5em #666, inset 0 .7em 0 #666, inset 0 .9em 0 #888, inset 0 1.4em 0 #666, inset 0 1.6em 0 #888, inset 0 2.1em 0 #666, inset 0 2.3em 0 #888, inset 0 2.5em 0 #666;
+        box-shadow: inset 0 0 0 .5em #666,
+        inset 0 .7em 0 #666,
+        inset 0 .9em 0 #888,
+        inset 0 1.4em 0 #666,
+        inset 0 1.6em 0 #888,
+        inset 0 2.1em 0 #666,
+        inset 0 2.3em 0 #888,
+        inset 0 2.5em 0 #666;
         content: '';
         height: 2.5em;
         position: absolute;
@@ -199,5 +224,72 @@ p {
     }
 }
 
-
+@media only screen and (max-width: 960px) {
+    nav {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 70px;
+        background: #fff;
+    }
+    section {
+        height: 100vh;
+    }
+    #screen2 {
+        background: #efc94d;
+        height: 100vh;
+        box-sizing: content-box;
+    }
 }
+
+/****************************MEDIA QUERIES************************************/
+
+@media only screen and (max-width: 768px) {
+    .nav li {
+        font-size: 14px;
+        float: left;
+        padding-left: 0%;
+        margin-left: 7%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .toggle-nav {
+        display: block;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+        line-height: 30px;
+    }
+    .toggle-nav:after {
+        content: ' Menu';
+    }
+    .nav-mobile {
+        display: none;
+    }
+    .style-mobile {
+        background: #ffffff;
+        top: 51px;
+        position: absolute;
+        width: 100%;
+    }
+    .style-mobile li {
+        display: block;
+        width: 100%;
+    }
+    .nav {
+        top: 0;
+        display: block;
+        float: none;
+        margin: 0em;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    .nav-mobile {
+        display: block !important;
+    }
+}
+
+
+/*********MEDIA QUERY END**********/
