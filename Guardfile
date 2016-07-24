@@ -16,8 +16,6 @@
 # and, you'll have to watch "config/Guardfile" instead of "Guardfile"
 
 guard 'livereload' do
-  watch(%r{css/.+\.css})
+  watch(%r{static/.+})
   watch(%r{views/.+\.pug})
-  watch(%r{js/.+\.js})
-  watch(%r{img/.+\.(jpg|jpeg|png)})
 end
