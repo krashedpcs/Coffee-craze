@@ -1,0 +1,69 @@
+extends ./base.pug
+block content
+	nav.nav
+		div.nav-center
+			a.toggle-nav(href="#") &#9776;
+			div.nav-mobile
+				ul.left
+					li
+						a(href="/")
+							i.fa.fa-home Home
+					li
+						a(href="#screen2")
+							i.fa.fa-user About
+					li
+						a(href="/menu")
+							i.fa.fa-home Menu
+					li
+						a(href="#screen3")
+							i.fa.fa-home Contact
+					li
+						a(href="#")
+							i.fa.fa-home Location
+	section#screen1
+		h1.skewed
+			span Coffee Craze
+
+	section#screen2
+		div.row
+			div.small-5.small-centered.columns
+				p.
+					We located all across Nairobi, offering the best made coffee. Come see the new digs and say hi.
+
+		div.row
+			div.small-10.small-centered.columns
+				p.
+					Coffee Craze is dedicated to preparing coffee the right way, and making it accessible to everyone.
+					We uphold the classic coffee and espresso preparations, complemented by our high-quality specialty drinks.
+					We use the best coffees from Intelligentsia and Four Barrel, we don't rush and we’re constantly learning and refining our craft.
+
+		div.container
+			div.media
+				ul
+					li
+						img(src="img/Facebook.png")
+					li
+						img(src="img/Twitterbird.png")
+					li
+						img(src="img/Facebook.png")
+					li
+						img(src="img/Twitterbird.png")
+					li
+						img(src="img/instapink.png")
+
+	section#screen3
+		h3 Contact
+		form(method="POST", action="/")
+			div.row
+				div.medium-6.columns
+					label
+						input(type="text", placeholder="Name", name="name")
+				div.medium-6.columns
+					label
+						input(type="text", placeholder="Email", name="email")
+			div.row
+				div.small-12.small-centered.large-uncentered.columns
+					label
+						textarea(placeholder="Your message is accepted.", name="message")
+			div.input-group-button
+				input.button(type="submit", value="Submit")
